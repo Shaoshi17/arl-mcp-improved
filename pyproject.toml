@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arl-mcp-improved"
+version = "1.0.0"
+description = "改进版 ARL MCP 服务器，支持环境变量配置"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "fastmcp>=0.2.0",
+    "requests>=2.31.0",
+    "tldextract>=5.0.0",
+    "urllib3>=2.0.0"
+]
+
+[project.scripts]
+arl-mcp-improved = "server:main"
